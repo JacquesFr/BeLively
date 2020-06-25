@@ -1,0 +1,166 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>BeLively By UCR Students</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/belively_logo.jpg" alt="belively logo" width="200" height="60" />
+                        </div>
+                        <div class="col-6">
+                            <ul class="icons">
+                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h2 style="font-size: 70px">Edit My Profile - Instructor</h2>
+                    </header>
+                    <h1></h1>
+                    <form method="post" action="#">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="name" id="name_instructor" placeholder="Name" />
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="id" id="id" placeholder="Enter Your Work ID" />
+                                </div>
+                            </div>
+                            <h3></h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="address" id="address" placeholder="Address" />
+                                </div>
+
+                                <div class="col-6">
+                                    <input type="text" name="number" id="number" placeholder="Phone Number" />
+                                </div>
+                            </div>
+
+                            <h3></h3>
+                            <h3></h3>
+                            <ul class="actions">
+                                <li><button class="button primary" onclick="editInstructorProfile(); return false;">Submit</button></li>
+                            </ul>
+
+                        </div>
+                    </form>
+                    <h1></h1>
+
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2 style="font-size: 40px">Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a style="font-size: 20px" href="instructor_homepage.html" onclick="videos();">Workout Classes</a></li>
+                        <li><a style="font-size: 20px" href="my_videos.html">My Videos</a></li>
+                        <li><a style="font-size: 20px" href="upload_class.html">Upload A Class</a></li>
+                        <li><a style="font-size: 20px" href="my_instructor_profile.html">My Profile</a></li>
+                    </ul>
+                </nav>
+
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h3>Get in touch</h3>
+                    </header>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">customer.service@BeLively.com</a></li>
+                        <li class="icon solid fa-phone">(800) 123-4567</li>
+                        <li class="icon solid fa-home">
+                            1234 Made It Road <br />
+                            Beverly Hills, CA 90209-90213
+                        </li>
+                    </ul>
+                </section>
+
+                <ul>
+                    <a class="button primary large" onclick="Logout(); return false;">Sign Out</a>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCBaVew8thY-alSGeEUlRsKPFXIHs1Hl7c",
+            authDomain: "belively-e6cdc.firebaseapp.com",
+            databaseURL: "https://belively-e6cdc.firebaseio.com",
+            projectId: "belively-e6cdc",
+            storageBucket: "belively-e6cdc.appspot.com",
+            messagingSenderId: "830591311425",
+            appId: "1:830591311425:web:51b19f757b9df919ef70c0",
+            measurementId: "G-V37JV4KFWY"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/SignIn.js"></script>
+    <script src="assets/js/VideoPulls.js"></script>
+    <script src="assets/js/InstructorProfile.js"></script>
+
+
+</body>
+</html>
